@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girish Shelly - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        
+        .sidebar {
+            background: linear-gradient(to bottom, #2c3e50 0%, #34495e 100%);
+            color: #fff;
+            width: 300px;
+            padding: 40px 30px;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            object-fit: cover;
+        }
+        
+        .contact-info {
+            margin-bottom: 40px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .contact-item::before {
+            content: '📍';
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        
+        .contact-item.phone::before {
+            content: '📞';
+        }
+        
+        .contact-item.email::before {
+            content: '✉️';
+        }
+        
+        .sidebar h2 {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #fff;
+        }
+        
+        .sidebar p {
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        
+        .skills-section {
+            margin-bottom: 30px;
+        }
+        
+        .skill-category {
+            margin-bottom: 25px;
+        }
+        
+        .skill-category h3 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+        
+        .skill-category ul li::before {
+            content: '• ';
+            font-weight: bold;
+        }
+        
+        .websites h2 {
+            margin-top: 20px;
+        }
+        
+        .websites ul {
+            list-style: none;
+            font-size: 13px;
+        }
+        
+        .websites ul li::before {
+            content: '• ';
+            font-weight: bold;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 40px 50px;
+        }
+        
+        .header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .header hr {
+            border: none;
+            border-top: 3px solid #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section h2 {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            margin-bottom: 10px;
+        }
+        
+        .job-date {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .job-description ul {
+            margin-left: 20px;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+        
+        .job-description ul li {
+            margin-bottom: 8px;
+        }
+        
+        .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .education-date {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .education-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+        
+        .education-institution {
+            font-size: 13px;
+            color: #555;
+        }
+        
+        @media print {
+            body {
+                background: #fff;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <img src="profile-photo.png" alt="Girish Shelly" class="profile-img">
+            
+            <div class="contact-info">
+                <div class="contact-item">India</div>
+                <div class="contact-item phone">9417142661</div>
+                <div class="contact-item email">girishelly469@gmail.com</div>
+            </div>
+            
+            <h2>Summary</h2>
+            <p>Dynamic software engineer with a proven track record at DEVANANT, driving a 30% reduction in project delivery timelines. Proficient in React and .NET 7, I excel in database optimization and project management, delivering scalable solutions that enhance security and user experience. Passionate about leveraging technology to achieve impactful results.</p>
+            
+            <div class="skills-section">
+                <h2>Skills</h2>
+                
+                <div class="skill-category">
+                    <h3>Software Development:</h3>
+                    <ul>
+                        <li>Frontend & Backend Web Development, OODB, Database Optimization, Application Deployment</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Project Management:</h3>
+                    <ul>
+                        <li>Product Roadmaps, Customer Acquisition, Agile Delivery, Cross-functional Collaboration</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Cybersecurity & IAM:</h3>
+                    <ul>
+                        <li>Identity and Access Management, Cybersecurity Protocols, Monitoring & Logging</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Data & ML:</h3>
+                    <ul>
+                        <li>Optimization, Data Analysis, Machine Learning Pipelines</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Design & UX:</h3>
+                    <ul>
+                        <li>User Experience Design, Usability Improvements, Rapid Prototyping</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="websites">
+                <h2>Websites, Portfolios, Profiles</h2>
+                <ul>
+                    <li>linkedin.com/in/girish-shelly</li>
+                    <li>devanant.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Girish Shelly</h1>
+                <hr>
+            </div>
+            
+            <div class="section">
+                <h2>Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-date">May 2023 - Current</div>
+                        <div class="job-title">Founder and CEO DEVANANT | Remote, India</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Drove adoption of centralized authentication with Keycloak, cut project delivery timelines by 30%</li>
+                            <li>Launched MFA and SSO capabilities to enhance platform security while reducing login friction for end users.</li>
+                            <li>Designed scalable systems employing Docker for containerization to improve application performance by 10%</li>
+                            <li>Developed 4+ web apps with React, Angular, .NET 7 and Express.js, incorporating Keycloak for secure user management.</li>
+                            <li>Optimized databases to achieve 99.9% data integrity and 16% faster query responses with consistent Keycloak data sync</li>
+                            <li>Established CI/CD pipelines using GitLab CI/CD, for continuous Keycloak integration and secure and rapid deployment</li>
+                            <li>Implemented RBAC/ABAC within Keycloak to effectively manage user permissions, in accordance with organizational security policies</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-date">September 2022 - May 2023</div>
+                        <div class="job-title">Software Development Engineer (Contractor) HAPA AG | Remote, Switzerland</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Managed the design and release of the features in coordination with the Product Manager and UI/UX team</li>
+                            <li>Developed custom client product to add and manage tasks assigned to the employees of the company using Vue.js</li>
+                            <li>Redesigned database by normalization which helped in reducing the response time of the API by 1-5%</li>
+                            <li>Using Docker 7 framework, Designed and developed a scalable back-end with MongoDB as NoSQL Database</li>
+                            <li>Increased build success by 30% by extensive API test coverage for back-end in NUnit Framework</li>
+                            <li>Worked with UX/UI team to improve the existing UX/UI and increased customer conversion by 12%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-date">May 2022 - February 2023</div>
+                        <div class="job-title">Software Development Engineer SAAS LABS | Remote, India</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Worked on Growth Team along with founding members to increase the overall throughput of the customers</li>
+                            <li>Developed Mastermind Web Page to give admin access to client information using React, Redux, and react-query</li>
+                            <li>Optimised API by calling multiple asynchronous API calls concurrently which reduced by time by 120%</li>
+                            <li>Successfully integrated Userflow in the application to increase the conversion rate of the customers by 10%</li>
+                            <li>Scaled up onClick event capturing using the PubSub and subscriber pattern to the Userflow</li>
+                            <li>Developed new React components to a new feature which increased user time by 1min</li>
+                            <li>Wrote PHP Data Migration crons to transfer the data from SQL server to BigQuery</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-date">July 2020 - May 2022</div>
+                        <div class="job-title">Software Development Engineer STRATMED SERVICES PVT LTD | Hyderabad, India</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Created 5 Business modules which are being used within the organization to provide them the Business insights</li>
+                            <li>Removed system critical MongoDB bug thereby reducing the downtime from 5% to 0.1%</li>
+                            <li>Created 2 MERN modules and successfully deployed them to the AWS ec2 instance</li>
+                            <li>Completed the ETL pipeline to pull the data from the Hospital servers to MongoDB cluster and 1 FTE day per process</li>
+                            <li>Built a Supervised NLP model to map Hospitals Items with the Stratmed Item Master</li>
+                            <li>Deployed a bat script which sends the SQL query result to the email and scheduled it by the Windows Task Scheduler</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-date">January 2020 - July 2020</div>
+                        <div class="job-title">Software Engineer Intern MENTOR GRAPHICS | Bengaluru, India</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Worked on Mask process correction in Photo-lithography</li>
+                            <li>Made several Algorithms to solve the problem to calculate the number of neighboring atoms exposed by UV</li>
+                            <li>Used Cache misses in code to decrease time of execution by 5%</li>
+                            <li>Also worked on Vectorization to use SIMD instructions of Processor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Education</h2>
+                
+                <div class="education-item">
+                    <div class="education-date">August 2025</div>
+                    <div class="education-title">Executive Program | 3TP Emerging Leaders</div>
+                    <div class="education-institution">Indian Institute of Management Ahmedabad (IIMA), Ahmedabad</div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-date">July 2020</div>
+                    <div class="education-title">B.E. | Electronics and Communications</div>
+                    <div class="education-institution">Thapar Institute of Engineering and Technology, Patiala</div>
+                    <div class="education-institution">GPA: 7.96/10</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
